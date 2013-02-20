@@ -1,97 +1,67 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Matthew Graham - Web Developer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<head>
+  <meta charset="utf-8">
+  <title>Matthew Graham's Work</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <!-- Le styles -->
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        padding-top: 20px;
-        padding-bottom: 40px;
-      }
+  <!-- Le styles -->
+  <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/reveal.css">
+  <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 
-      /* Custom container */
-      .container-narrow {
-        margin: 0 auto;
-        max-width: 700px;
-      }
-      .container-narrow > hr {
-        margin: 30px 0;
-      }
-
-      /* Main marketing message */
-      .leader {
-        margin: 10px 0;
-        text-align: left;
-      }
-      .leader h1 {
-        font-size: 24px;
-        line-height: 1;
-      }
-	  
-	  /* Footer */
-	  .footer img {
-	    padding-left: 2em;
-	  }
-    </style>
-    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+      <![endif]-->
 
-    <!-- Fav and touch icons -->
-    <link rel="shortcut icon" href="bootstrap/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="bootstrap/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="bootstrap/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="bootstrap/ico/apple-touch-icon-57-precomposed.png">
-  </head>
+      <!-- Fav and touch icons -->
+      <link rel="shortcut icon" href="bootstrap/ico/favicon.ico">
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="bootstrap/ico/apple-touch-icon-144-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="bootstrap/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap/ico/apple-touch-icon-72-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" href="bootstrap/ico/apple-touch-icon-57-precomposed.png">
+    </head>
 
-  <body>
+    <body>
 
-    <div class="container-narrow">
+      <div class="container-narrow">
 
-      <div class="masthead">
-        <ul class="nav nav-pills pull-right">
-          <li><a href="/">Home</a></li>
-          <li class="active"><a href="#">Work</a></li>
-          <li><a href="resume.html">Resume</a></li>
-	  <li><a href="mailto:me@mattgraham.me">Contact</a></li>
-        </ul>
-        <h3>Matthew Graham</h3>
-      </div>
-
-      <hr>
-
-      <div class="leader">
-		<h1>Hi, I'm a web developer from Mustang, OK.</h1>
-      </div>
-
-      <hr>
-
-      <div class="row-fluid">
-        <div>
-			<h4>I am a <a href="resume.html">web developer</a>.</h4>
-			<ul>
-				<li>I build things like administrative control panels, permission systems, and CMS.</li>
-				<li>I'm familiar with frameworks like CodeIgniter for PHP.</li>
-			</ul>
-			
-			<h4>I'm also a <a href="resume.html">ASP.NET developer</a>.</h4>
-			<ul>
-				<li>I work with back-end developers to implement their API onto your website.</li>
-				<li>I build pages with grids and all sorts of data via the use of ajax.</li>
-			</ul>
+        <div class="masthead">
+          <ul class="nav nav-pills pull-right">
+            <li><a href="/">Home</a></li>
+            <li class="active"><a href="#">Work</a></li>
+            <li><a href="resume">Resume</a></li>
+            <li><a href="mailto:me@mattgraham.me">Contact</a></li>
+          </ul>
+          <h3>Matthew Graham</h3>
         </div>
-      </div>
+
+        <hr>
+
+        <div class="row-fluid">
+          <div class="span12">
+              <h2>TAW AdminCP</h2>
+              <p>The AdminCP was created for TAW shortly after an update for our ArmA 2 server came out that essentialy left Linux servers dead in the water.</p>
+              <p>I set out to create a admin panel that was easy to use and also easy to work with on the backend.</p>
+              <p>My first decision was to choose a framework that would boost development time. I decided to go with <a href="http://ellislab.com/codeigniter">CodeIgniter</a>.</p>
+              <p>After a few months of development time I ended up with an admin panel that could edit a server's configuration files, view a server's status, view the network graph, view the server logs, and even run RCon commands from the web.</p>
+              <p><a href="#" id="btnGallery" class="big-link btn" data-reveal-id="myModal" data-animation="none">View images &raquo;</a></p>
+            </div>
+        </div><!--/row-->
+
+        <div id="myModal" class="reveal-modal" style="width: 700px; height: 400px; position: absolute; left:50%; top:50%; margin: -350px 0 0 -390px;">
+          <div id="galleria">
+            <img src="http://i.imgur.com/s3rIalM.png" />
+            <img src="http://i.imgur.com/G2jLZqH.png" />
+            <img src="http://i.imgur.com/MAWfZyk.png" />
+            <img src="http://i.imgur.com/JWEM1sK.png" />
+          </div>
+          <a id="btnCloseGallery" class="close-reveal-modal">&#215;</a>
+        </div>
 
       <hr>
 
@@ -104,19 +74,18 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="bootstrap/js/jquery.js"></script>
-    <script src="bootstrap/js/bootstrap-transition.js"></script>
-    <script src="bootstrap/js/bootstrap-alert.js"></script>
-    <script src="bootstrap/js/bootstrap-modal.js"></script>
-    <script src="bootstrap/js/bootstrap-dropdown.js"></script>
-    <script src="bootstrap/js/bootstrap-scrollspy.js"></script>
-    <script src="bootstrap/js/bootstrap-tab.js"></script>
-    <script src="bootstrap/js/bootstrap-tooltip.js"></script>
-    <script src="bootstrap/js/bootstrap-popover.js"></script>
-    <script src="bootstrap/js/bootstrap-button.js"></script>
-    <script src="bootstrap/js/bootstrap-collapse.js"></script>
-    <script src="bootstrap/js/bootstrap-carousel.js"></script>
-    <script src="bootstrap/js/bootstrap-typeahead.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js/jquery.reveal.js" type="text/javascript"></script>
+    <script src="galleria/galleria-1.2.9.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#galleria").hide();
+
+        Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+        Galleria.run('#galleria');
+      });
+    </script>
 
   </body>
-</html>
+  </html>

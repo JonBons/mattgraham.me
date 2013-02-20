@@ -1,0 +1,48 @@
+body {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+/* Custom container */
+.container-narrow {
+  margin: 0 auto;
+  max-width: 700px;
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message */
+.leader {
+  margin: 10px 0;
+  text-align: left;
+}
+.leader h1 {
+  font-size: 24px;
+  line-height: 1;
+}
+
+/* Footer */
+.footer img {
+  padding-left: 2em;
+}
+
+.right {
+  text-align: right;
+  float: right;
+}
+
+.left {
+  text-align: left;
+  float: left;
+}
+
+.middle {
+  text-align: center;
+}
+
+.small {
+  font-size: 14px;
+}
+
+#galleria{ width: 700px; height: 400px; background: #000 }

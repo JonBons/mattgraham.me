@@ -1,7 +1,22 @@
-RewriteEngine on
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.html -f
-RewriteRule ^(.*)$ $1.html
+<IfModule mod_rewrite.c>
+        RewriteEngine On
+        RewriteBase /
 
-RewriteCond %{REQUEST_FILENAME}\.pdf -f
-RewriteRule ^(.*)$ $1.pdf
+        # redirect from www to non-www
+        RewriteCond %{HTTP_HOST} ^www.mattgraham.me$ [NC]
+        RewriteRule ^(.*)$ http://mattgraham.me/$1 [R=301,L]
+
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteCond %{THE_REQUEST} ^GET\ /[^?\s]+\.html
+        RewriteRule (.*)\.html$ /$1/ [L,R=301]
+
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteRule (.*)/$ $1.html [L]
+
+        # Remove trailing slash:
+        RewriteRule (.*)/$ $1 [L]
+
+        # Now test without the trailing slash:
+        RewriteCond %{REQUEST_FILENAME}.html -f
+        RewriteRule . %{REQUEST_FILENAME}.html [QSA,L]
+</IfModule>

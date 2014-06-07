@@ -50,11 +50,22 @@
             <p>I set out to create a admin panel that was easy to use and also easy to work with on the backend.</p>
             <p>My first decision was to choose a framework that would boost development time. I decided to go with <a href="http://ellislab.com/codeigniter">CodeIgniter</a>.</p>
             <p>After a few months of development time I ended up with an admin panel that could edit a server's configuration files, view a server's status, view the network graph, view the server logs, and even run RCon commands from the web.</p>
-            <p><a href="#" id="btnGallery" class="big-link btn" data-reveal-id="myModal" data-animation="none">View images &raquo;</a></p>
+            <p><a href="#" id="btnGallery" class="big-link btn" data-reveal-id="adminModal" data-animation="none">View images &raquo;</a></p>
           </div>
         </div><!--/row-->
 
-        <div id="myModal" class="reveal-modal" style="width: 700px; height: 400px; position: absolute; left:50%; top:50%; margin: -350px 0 0 -390px;">
+        <div class="row-fluid">
+          <div class="span12">
+            <h2><a href="https://github.com/JonBons/SlickGrid-DraggableGrouping-SummaryFooters">SlickGrid Draggable Grouping</a></h2>
+            <p><a href="http://vps.mattgraham.me/slickgrid/examples/example-plugin-summaryfooters-grouping.html">Example</a></p>
+            <p>When working with Infragistics I got used to the quick and easy way of dragging column headers on a drop zone and got fustrated with the grouping integration in SlickGrid.</p>
+            <p>I first started out the project with a SlickGrid plugin but found that the API did not include what I needed to implement a draggable drop zone.</p>
+            <p>After a little bit of work messing with the drag implementation in SlickGrid I was able to create a simple drop zone that allowed for easy drag and drop grouping of columns.</a>.</p>
+            <!-- <p><a href="#" id="btnGalleryGrid" class="big-link btn" data-reveal-id="gridModal" data-animation="none">View images &raquo;</a></p> -->
+          </div>
+        </div><!--/row-->
+
+        <div id="adminModal" class="reveal-modal" style="width: 700px; height: 400px; position: absolute; left:50%; top:50%; margin: -350px 0 0 -390px;">
           <div id="galleria">
             <img src="http://i.imgur.com/s3rIalM.png" />
             <img src="http://i.imgur.com/XwmHMLd.png" />
@@ -62,6 +73,16 @@
             <img src="http://i.imgur.com/EJsB9XW.png" />
           </div>
           <a id="btnCloseGallery" class="close-reveal-modal">&#215;</a>
+        </div>
+
+        <div id="gridModal" class="reveal-modal" style="width: 700px; height: 400px; position: absolute; left:50%; top:50%; margin: -350px 0 0 -390px;">
+          <div id="galleriaGrid">
+            <img src="http://i.imgur.com/s3rIalM.png" />
+            <img src="http://i.imgur.com/XwmHMLd.png" />
+            <img src="http://i.imgur.com/EfEazWf.png" />
+            <img src="http://i.imgur.com/EJsB9XW.png" />
+          </div>
+          <a id="btnCloseGalleryGrid" class="close-reveal-modal">&#215;</a>
         </div>
 
         <hr>
@@ -101,9 +122,11 @@
     <script type="text/javascript">
     $(document).ready(function() {
       $("#galleria").hide();
+      $("#galleriaGrid").hide();
 
       Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
       Galleria.run('#galleria');
+      Galleria.run('#galleriaGrid');
     });
     </script>
 
